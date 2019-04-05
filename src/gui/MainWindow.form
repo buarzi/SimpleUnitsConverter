@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.MainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="14" y="20" width="445" height="311"/>
+    </constraints>
+    <properties>
+      <maximumSize width="400" height="250"/>
+      <minimumSize width="400" height="250"/>
+      <preferredSize width="420" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="6185f" binding="functionPanel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="400" height="250"/>
+            <preferred-size width="400" height="250"/>
+            <maximum-size width="500" height="250"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="bd656" binding="temperaturePanel" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Temperature"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1ca2e" class="javax.swing.JLabel" binding="TemperatureFromLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="From"/>
+                </properties>
+              </component>
+              <component id="e8681" class="javax.swing.JTextField" binding="TemperatureTextFieldFrom">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="1"/>
+                </properties>
+              </component>
+              <component id="31ba7" class="javax.swing.JLabel" binding="TemperatureToLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="To"/>
+                </properties>
+              </component>
+              <component id="c1556" class="javax.swing.JTextField" binding="TemperatureTextFieldTo">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="a5547" class="javax.swing.JList" binding="TemperatureListTo">
+                <constraints>
+                  <grid row="2" column="1" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Kelvin"/>
+                    <item value="Celsius"/>
+                    <item value="Fahrenheit"/>
+                  </model>
+                  <selectedIndex value="0"/>
+                  <selectionMode value="0"/>
+                </properties>
+              </component>
+              <component id="3201b" class="javax.swing.JList" binding="TemperatureListFrom">
+                <constraints>
+                  <grid row="2" column="0" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Kelvin"/>
+                    <item value="Celsius"/>
+                    <item value="Fahrenheit"/>
+                  </model>
+                  <selectedIndex value="0"/>
+                  <selectionMode value="0"/>
+                  <valueIsAdjusting value="false"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="43765" binding="lengthPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Length"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="b39e9" binding="LengthContentPanel" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="70824" class="javax.swing.JLabel" binding="LengthFromLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="From"/>
+                    </properties>
+                  </component>
+                  <component id="637a0" class="javax.swing.JTextField" binding="LengthTextFieldFrom">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="1"/>
+                    </properties>
+                  </component>
+                  <component id="dc339" class="javax.swing.JLabel" binding="LengthToLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="To"/>
+                    </properties>
+                  </component>
+                  <component id="a125" class="javax.swing.JTextField" binding="LengthTextFieldTo">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="a6b7d" class="javax.swing.JList" binding="LengthListTo">
+                    <constraints>
+                      <grid row="2" column="1" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Meter"/>
+                        <item value="Kilometer"/>
+                        <item value="Centimeter"/>
+                        <item value="Mile"/>
+                        <item value="Yard"/>
+                        <item value="Foot"/>
+                        <item value="Inch"/>
+                      </model>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                  <component id="deb09" class="javax.swing.JList" binding="LengthListFrom">
+                    <constraints>
+                      <grid row="2" column="0" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Meter"/>
+                        <item value="Kilometer"/>
+                        <item value="Centimeter"/>
+                        <item value="Mile"/>
+                        <item value="Yard"/>
+                        <item value="Foot"/>
+                        <item value="Inch"/>
+                      </model>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                      <valueIsAdjusting value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="fc1f1" binding="weightPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Weight"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="92da7" binding="WeightContentPanel" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="88801" class="javax.swing.JLabel" binding="WeightFromLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="From"/>
+                    </properties>
+                  </component>
+                  <component id="e8231" class="javax.swing.JTextField" binding="WeightTextFieldFrom">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="1"/>
+                    </properties>
+                  </component>
+                  <component id="3d90c" class="javax.swing.JLabel" binding="WeightToLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="To"/>
+                    </properties>
+                  </component>
+                  <component id="f5ef9" class="javax.swing.JTextField" binding="WeightTextFieldTo">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="56eff" class="javax.swing.JList" binding="WeightListTo">
+                    <constraints>
+                      <grid row="2" column="1" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Kilogram"/>
+                        <item value="Gram"/>
+                        <item value="Miligram"/>
+                        <item value="Pound"/>
+                        <item value="Ounce"/>
+                      </model>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                  <component id="29fd2" class="javax.swing.JList" binding="WeightListFrom">
+                    <constraints>
+                      <grid row="2" column="0" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Kilogram"/>
+                        <item value="Gram"/>
+                        <item value="Miligram"/>
+                        <item value="Pound"/>
+                        <item value="Ounce"/>
+                      </model>
+                      <requestFocusEnabled value="true"/>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                      <valueIsAdjusting value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="225ac" binding="speedPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Speed"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="91835" binding="SpeedContentPanel" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="65eeb" class="javax.swing.JLabel" binding="SpeedFromLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="From"/>
+                    </properties>
+                  </component>
+                  <component id="afb4d" class="javax.swing.JTextField" binding="SpeedTextFieldFrom">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="1"/>
+                    </properties>
+                  </component>
+                  <component id="f2609" class="javax.swing.JLabel" binding="SpeedToLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="To"/>
+                    </properties>
+                  </component>
+                  <component id="3f3b5" class="javax.swing.JTextField" binding="SpeedTextFieldTo">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="b8bc1" class="javax.swing.JList" binding="SpeedListTo">
+                    <constraints>
+                      <grid row="2" column="1" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="m/s"/>
+                        <item value="km/h"/>
+                        <item value="mph"/>
+                      </model>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                  <component id="a6fef" class="javax.swing.JList" binding="SpeedListFrom">
+                    <constraints>
+                      <grid row="2" column="0" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="m/s"/>
+                        <item value="km/h"/>
+                        <item value="mph"/>
+                      </model>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                      <valueIsAdjusting value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="7a8d0" binding="timePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Time"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="967f9" binding="TimeContentPanel" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="5e37a" class="javax.swing.JLabel" binding="TimeFromLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="From"/>
+                    </properties>
+                  </component>
+                  <component id="d91a9" class="javax.swing.JTextField" binding="TimeTextFieldFrom">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="1"/>
+                    </properties>
+                  </component>
+                  <component id="50066" class="javax.swing.JLabel" binding="TimeToLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="To"/>
+                    </properties>
+                  </component>
+                  <component id="3da36" class="javax.swing.JTextField" binding="TimeTextFieldTo">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="9bfb" class="javax.swing.JList" binding="TimeListTo">
+                    <constraints>
+                      <grid row="2" column="1" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Second"/>
+                        <item value="Milliseconds"/>
+                        <item value="Minute"/>
+                        <item value="Hour"/>
+                      </model>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                  <component id="f2c24" class="javax.swing.JList" binding="TimeListFrom">
+                    <constraints>
+                      <grid row="2" column="0" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Second"/>
+                        <item value="Milliseconds"/>
+                        <item value="Minute"/>
+                        <item value="Hour"/>
+                      </model>
+                      <selectedIndex value="-1"/>
+                      <selectionMode value="0"/>
+                      <valueIsAdjusting value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="791ec" binding="volumePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Volume"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="9f254" binding="VolumeContentPanel" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="10793" class="javax.swing.JLabel" binding="VolumeFromLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="From"/>
+                    </properties>
+                  </component>
+                  <component id="bc2ca" class="javax.swing.JTextField" binding="VolumeTextFieldFrom">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="1"/>
+                    </properties>
+                  </component>
+                  <component id="302ec" class="javax.swing.JLabel" binding="VolumeToLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="To"/>
+                    </properties>
+                  </component>
+                  <component id="48dec" class="javax.swing.JTextField" binding="VolumeTextFieldTo">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="6ad58" class="javax.swing.JList" binding="VolumeListTo">
+                    <constraints>
+                      <grid row="2" column="1" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Liter"/>
+                        <item value="Milliliter"/>
+                        <item value="US Gallon"/>
+                        <item value="US Pint"/>
+                      </model>
+                      <selectedIndex value="0"/>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                  <component id="46a4d" class="javax.swing.JList" binding="VolumeListFrom">
+                    <constraints>
+                      <grid row="2" column="0" row-span="7" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Liter"/>
+                        <item value="Milliliter"/>
+                        <item value="US Gallon"/>
+                        <item value="US Pint"/>
+                      </model>
+                      <selectedIndex value="-1"/>
+                      <selectionMode value="0"/>
+                      <valueIsAdjusting value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="fcf6d" class="javax.swing.JLabel" binding="summaryLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="208" height="22"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="e2581" class="javax.swing.JLabel" binding="footerLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
